@@ -3,10 +3,15 @@
 **Currency Converter** is an application that you can convert currencies.
 
 The datas are constantly getting update with changing market data. With Currency Converter you can convert:
+
 -Offical currency to Offical currency
+
 -Offical currency to Crypto currency
+
 -Crypto currency to Offical currency
+
 -Crypto currency to Crypto currency
+
 
 
 ![app](https://user-images.githubusercontent.com/85064536/132957356-a0c4deda-b33f-455b-9b7a-26d082581734.gif)
