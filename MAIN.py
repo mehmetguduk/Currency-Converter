@@ -21,6 +21,7 @@ class myApp(QtWidgets.QMainWindow):
         self.ui.lineedit_HAVE_input.textChanged.connect(self.correct_input)
         self.ui.button_convert.clicked.connect(self.converter)
         self.ui.button_change.clicked.connect(self.change)
+        self.ui.lbl_copyright.setOpenExternalLinks(True)
 
     def clear_one(self):
         if self.ui.combobox_HAVE_currencies.currentIndex() != -1:
