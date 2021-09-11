@@ -5,6 +5,7 @@
 
 # The visual and design part of the application is here.
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -1167,6 +1168,11 @@ class Ui_MainWindow(object):
         self.verticalLayout.setStretch(0, 45)
         self.verticalLayout.setStretch(1, 10)
         self.verticalLayout.setStretch(2, 45)
+        self.lbl_copyright = QtWidgets.QLabel(self.centralwidget)
+        self.lbl_copyright.setGeometry(QtCore.QRect(0, 380, 501, 20))
+        self.lbl_copyright.setStyleSheet("color: rgb(0, 0, 0);")
+        self.lbl_copyright.setAlignment(QtCore.Qt.AlignCenter)
+        self.lbl_copyright.setObjectName("lbl_copyright")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -1712,4 +1718,5 @@ class Ui_MainWindow(object):
         self.combobox_WANT_crypto_currencies.setItemText(96, _translate("MainWindow", "ZEN - Horizen"))
         self.combobox_WANT_crypto_currencies.setItemText(97, _translate("MainWindow", "BNT - Bancor"))
         self.combobox_WANT_crypto_currencies.setItemText(98, _translate("MainWindow", "SC - Siacoin"))
+        self.lbl_copyright.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:7pt; color:#000000;\">© Designed and Developed by </span><a href=\"https://github.com/mehmetguduk\"><span style=\" font-size:7pt; text-decoration: underline; color:#0000ff;\">Mehmet Güdük</span></a></p></body></html>"))
 import images
