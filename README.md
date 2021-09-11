@@ -5,6 +5,6 @@
 
 ★ **Method one** : You can download all py files (MAIN.py, images.py, interface.py) in same folder and run MAIN.py.
 
-★ **Method two** : You can [CLICK HERE](https://github.com/mehmetguduk/Shutdown-Timer/releases/tag/Exe) for exe version of application.
+★ **Method two** : You can [CLICK HERE](https://github.com/mehmetguduk/Currency-Converter/releases/tag/Exe) for exe version of application.
 
 ★ **Method three** : You can download all py files (MAIN.py, images.py, interface.py) in same folder and convert MAIN.py to exe with any py to exe converter. Then you can run that exe to get access.
