@@ -4,19 +4,20 @@
 
 The datas are constantly getting update with changing market data. With Currency Converter you can convert:
 
--Offical currency to Offical currency
+● Offical currency to Offical currency,
 
--Offical currency to Crypto currency
+● Offical currency to Crypto currency,
 
--Crypto currency to Offical currency
+● Crypto currency to Offical currency,
 
--Crypto currency to Crypto currency
+● Crypto currency to Crypto currency.
 
-
+ 
 
 ![app](https://user-images.githubusercontent.com/85064536/132957356-a0c4deda-b33f-455b-9b7a-26d082581734.gif)
 
 
+ 
 ![howdoiruntheapp](https://user-images.githubusercontent.com/85064536/132956659-a843f0e4-5cfc-4623-9f64-e90f10cebdaa.jpg)
 
 ★ **Method one** : You can download all py files (MAIN.py, images.py, interface.py) in same folder and run MAIN.py.
