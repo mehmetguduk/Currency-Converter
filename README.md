@@ -25,3 +25,21 @@ The datas are constantly getting update with changing market data. With Currency
 ★ **Method two** : You can download all py files (MAIN.py, images.py, interface.py) in same folder and convert MAIN.py to exe with any py to exe converter. Then you can run that exe to get access.
 
 ★ **Method three** : You can download all py files (MAIN.py, images.py, interface.py) in same folder and run MAIN.py.
+
+In order to choose Method two or Method three you should install required modules that project use with the command below.
+
+```pip install -r requirements.txt```
+
+Requirements :
+
+● Windows operating system
+
+● Python 3
+
+● Python pip
+
+● Python Module : PyQt5==5.15.4 
+
+● Python Module : beautifulsoup4==4.10.0 
+
+● Python Module : requests==2.26.0
