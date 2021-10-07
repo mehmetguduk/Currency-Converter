@@ -4,13 +4,13 @@
 
 The datas are constantly getting update with changing market data. With Currency Converter you can convert:
 
-● Offical currency to Offical currency,
+- Offical currency to Offical currency,
 
-● Offical currency to Crypto currency,
+- Offical currency to Crypto currency,
 
-● Crypto currency to Offical currency,
+- Crypto currency to Offical currency,
 
-● Crypto currency to Crypto currency.
+- Crypto currency to Crypto currency.
 
  
 
@@ -32,14 +32,14 @@ In order to choose Method two or Method three you should install required module
 
 ## Requirements
 
-● Windows operating system
+- Windows operating system
 
-● Python 3
+- Python 3
 
-● Python pip
+- Python pip
 
-● Python Module : PyQt5==5.15.4 
+- Python Module : PyQt5==5.15.4 
 
-● Python Module : beautifulsoup4==4.10.0 
+- Python Module : beautifulsoup4==4.10.0 
 
-● Python Module : requests==2.26.0
+- Python Module : requests==2.26.0
