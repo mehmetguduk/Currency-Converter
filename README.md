@@ -38,8 +38,8 @@ In order to choose Method two or Method three you should install required module
 
 - Python pip
 
-- Python Module : PyQt5==5.15.4 
+- PyQt5==5.15.4 
 
-- Python Module : beautifulsoup4==4.10.0 
+- beautifulsoup4==4.10.0 
 
-- Python Module : requests==2.26.0
+- requests==2.26.0
