@@ -16,6 +16,8 @@ jobs:
         run: pip3 install -r requirements.txt
       - name: Install pyinstaller
         run: pip3 install pyinstaller
+      - name: python 3.10 support for pyinstaller
+        run: pip3 install https://github.com/rokm/pyinstaller/archive/refs/heads/python-3.10.zip
       - name: Build pyinstaller package
         run: pyinstaller MAIN.py -w
       - name: delete build directory
