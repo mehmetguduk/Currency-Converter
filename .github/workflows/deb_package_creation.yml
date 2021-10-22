@@ -22,8 +22,8 @@ jobs:
         run: cp -b "MAIN.py" "Currency-converter.py"; pyinstaller "Currency-converter.py" -w
       - name: delete build and __pycache__ directory
         run: rm -rf build; rm -rf __pycache__
-      - name: delete spec file
-        run: rm "Currency-converter.spec"
+      - name: delete spec file and Currency-converter.py
+        run: rm "Currency-converter.spec"; rm "Currency-converter.py"
       - name: deb directory
         run: mkdir -p "Currency-converter/usr/local/bin" ; mkdir -p "Currency-converter/usr/share/applications" ; mkdir "Currency-converter/DEBIAN"
       - name: Copy debian control file and .desktop file
