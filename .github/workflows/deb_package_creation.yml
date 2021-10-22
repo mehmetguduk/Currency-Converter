@@ -19,7 +19,7 @@ jobs:
       - name: Install pyinstaller
         run: python3.9 -m pip install pyinstaller
       - name: Build pyinstaller package
-        run: python3.9 -m pyinstaller MAIN.py -w
+        run: pyinstaller MAIN.py -w
       - name: delete build directory
         run: rm -rf build
       - name: delete spec file
