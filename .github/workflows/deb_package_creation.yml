@@ -1,0 +1,44 @@
+name: DEB package creation
+on: [push]
+jobs:
+  deb-package-creation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository content
+        uses: actions/checkout@v2
+      - name: setup python
+        uses: actions/setup-python@v2
+      - name: Delete previous deb package
+        run: rm "Currency-converter.deb"
+      - name: Update
+        run: sudo apt-get update
+      - name: Install requirements
+        run: pip3 install -r requirements.txt
+      - name: Install pyinstaller
+        run: pip3 install pyinstaller
+      - name: Build pyinstaller package
+        run: pyinstaller MAIN.py -w
+      - name: delete build directory
+        run: rm -rf build
+      - name: delete spec file
+        run: rm MAIN.spec
+      - name: deb directory
+        run: mkdir -p "Currency-converter/usr/local/bin" ; mkdir -p "Currency-converter/usr/share/applications" ; mkdir "Currency-converter/DEBIAN"
+      - name: Copy debian control file and .desktop file
+        run: cp -b "installer maker files/control" "Currency-converter/DEBIAN" ; cp -b "installer maker files/Currency converter.desktop" "Currency-converter/usr/share/applications"
+      - name: Copy pyinstaller package
+        run: cp -r "dist/Currency-converter" "Currency-converter/usr/local/bin"
+      - name: Build deb package
+        run: dpkg-deb --build --root-owner-group "Currency-converter"
+      - name: Remove dist and deb package directories
+        run: rm -r dist ; rm -r Currency-converter
+      - name: Git config
+        run: git config --global user.name "deb package creation bot"
+      - name: Git add
+        run: git add -A
+      - name: Git commit
+        run: git commit -m "deb package update"
+      - name: Git pull
+        run: git pull
+      - name: Git push
+        run: git push
