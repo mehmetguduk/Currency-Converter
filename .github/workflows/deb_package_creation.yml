@@ -19,7 +19,7 @@ jobs:
       - name: Install pyinstaller
         run: python3.9 -m pip install pyinstaller
       - name: Build pyinstaller package
-        run: pyinstaller MAIN.py -w
+        run: cp -b "MAIN.py" "Currency-converter.py"; pyinstaller "Currency-converter.py" -w
       - name: delete build directory
         run: rm -rf build
       - name: delete spec file
