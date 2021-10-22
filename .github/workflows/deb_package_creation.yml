@@ -27,7 +27,7 @@ jobs:
       - name: deb directory
         run: mkdir -p "Currency-converter/usr/local/bin" ; mkdir -p "Currency-converter/usr/share/applications" ; mkdir "Currency-converter/DEBIAN"
       - name: Copy debian control file and .desktop file
-        run: cp -b "installer maker files/control" "Currency-converter/DEBIAN" ; cp -b "installer maker files/Currency converter.desktop" "Currency-converter/usr/share/applications"
+        run: cp -b "deb package creation files/control" "Currency-converter/DEBIAN" ; cp -b "deb package creation files/Currency converter.desktop" "Currency-converter/usr/share/applications"
       - name: Copy pyinstaller package
         run: cp -r "dist/Currency-converter" "Currency-converter/usr/local/bin"
       - name: Build deb package
