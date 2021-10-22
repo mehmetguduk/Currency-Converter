@@ -1,0 +1,8 @@
+Package: Currency-converter
+Version: 1.0.0
+Architecture: all
+Maintainer: Mehmet Güdük
+Copyright: 2021 Mehmet Güdük
+License: GNU GENERAL PUBLIC LICENSE
+Homepage: https://github.com/mehmetguduk/Currency-Converter
+Description: Currency Converter is an application that you can convert official currencies or crypto currencies.
