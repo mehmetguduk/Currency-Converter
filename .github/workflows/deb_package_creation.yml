@@ -23,7 +23,7 @@ jobs:
       - name: delete build directory
         run: rm -rf build
       - name: delete spec file
-        run: rm MAIN.spec
+        run: rm "Currency-converter.spec"
       - name: deb directory
         run: mkdir -p "Currency-converter/usr/local/bin" ; mkdir -p "Currency-converter/usr/share/applications" ; mkdir "Currency-converter/DEBIAN"
       - name: Copy debian control file and .desktop file
