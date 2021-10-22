@@ -3,6 +3,9 @@ on: [push]
 jobs:
   deb-package-creation:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9']
     steps:
       - name: checkout repository content
         uses: actions/checkout@v2
