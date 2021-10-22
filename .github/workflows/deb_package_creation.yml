@@ -8,16 +8,17 @@ jobs:
         uses: actions/checkout@v2
       - name: setup python
         uses: actions/setup-python@v2
+      - name: install python3.9
       - name: Delete previous deb package
         run: rm "Currency-converter.deb"
       - name: Update
         run: sudo apt-get update
       - name: Install requirements
-        run: pip3 install -r requirements.txt
+        run: python3.9 -m pip install -r requirements.txt
       - name: Install pyinstaller
-        run: pip3 install pyinstaller
+        run: python3.9 -m pip install pyinstaller
       - name: Build pyinstaller package
-        run: pyinstaller MAIN.py -w
+        run: python3.9 -m pyinstaller MAIN.py -w
       - name: delete build directory
         run: rm -rf build
       - name: delete spec file
